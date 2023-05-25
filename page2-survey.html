@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Not Bored Games</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header>
+    <a href="index.html">Home</a>
+    <a href="page2-survey.html">Personalized Recommendation</a>
+    <a href="page3-links.html">External Links</a>
+    <a href="page4-favorites.html">Best Board Games</a>
+</header>
+
+<h1> Get a personalized board game recommendation from us!</h1>
+    <p>
+        Simply fill out this quick survey, and we will email you a few suggestions of games to try
+        that we think YOU would love! <br>
+        (We can also make recommendations if you are a parent looking to play games with your children.) <br>
+        <em>We won't send you anything else unless you sign up for our newsletter - No spam</em>
+    </p>
+
+
+<form action="/post" method="post">
+    <fieldset>
+        <legend>Info</legend>
+        <div>
+            <label for="user-email">Email</label>
+            <input type="email" id="user-email" name="user_email">
+        </div>
+        <div>
+            <label for="name">Name (optional)</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="age-range">Age Range (optional)</label>
+            <select id="age-range" name="age_range">
+                <option value="undefined">Select...</option>
+                <option value="3-5">3-5</option>
+                <option value="6-8">6-8</option>
+                <option value="9-12">9-12</option>
+                <option value="13-17">13-17</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-54">45-54</option>
+                <option value="55-64">55-64</option>
+                <option value="65+">65 or over</option>
+            </select>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Tell us about what you like</legend>
+        <div>
+            What genres are you interested in? (Select all that apply) <br>
+            <input type="checkbox" id="genre-party" name="genre_party"><label for="genre-party">Party</label>
+            <input type="checkbox" id="genre-cooperative" name="genre_cooperative"><label for="genre-cooperative">Cooperative</label>
+            <input type="checkbox" id="genre-deduction" name="genre_deduction"><label for="genre-deduction">Social deduction</label>
+            <input type="checkbox" id="genre-speaking" name="genre_speaking"><label for="genre-speaking">Speaking</label>
+            <input type="checkbox" id="genre-strategy" name="genre_strategy"><label for="genre-strategy">Strategy</label>
+            <input type="checkbox" id="genre-resource" name="genre_resource"><label for="genre-resource">Resource management</label>
+            <input type="checkbox" id="genre-rpg" name="genre_rpg"><label for="genre-rpg">Role-playing</label>
+            <input type="checkbox" id="genre-puzzle" name="genre_puzzle"><label for="genre-puzzle">Puzzle</label>
+            <input type="checkbox" id="genre-dexterity" name="genre_dexterity"><label for="genre-dexterity">Dexterity</label>
+            <input type="checkbox" id="genre-luck" name="genre_luck"><label for="genre-luck">Luck-based</label>
+            <input type="checkbox" id="genre-perfect-info" name="genre_perfect-info"><label for="genre-perfect-info">Perfect information (zero luck)</label>
+        </div>
+        <div>
+            <label for="kinds-of-game">What kinds of games do you like, in general?
+                What parts of any kind of game do you think are enjoyable?</label>
+            <textarea id="kinds-of-game" name="kinds_of_game"></textarea>
+        </div>
+        <div>
+            <label for="comments">Other comments</label>
+            <textarea id="comments" name="comments"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Sign up for our newsletter</label>
+        </div>
+        <div>
+            <button type="submit" id="submit-button">Submit</button>
+        </div>
+    </fieldset>
+</form>
+
+</body>
+</html>

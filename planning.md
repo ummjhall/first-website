@@ -32,7 +32,7 @@ Page 2
             2 text
                 Name (optional)
                 Email
-            Radio
+            Dropdown
                 Age range
             1 checkbox
                 Game genres

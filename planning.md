@@ -12,11 +12,11 @@ Font pairings:
     Playfair > EB Garamond
 
 Color palette:
-    104F55 Midnight Green
-    32746D Myrtle Green
-    9EC5AB Cambridge Blue
-    01200F Dark Green
-    011502 Night
+    #104F55 Midnight Green
+    #32746D Myrtle Green
+    #9EC5AB Cambridge Blue
+    #01200F Dark Green
+    #011502 Night
 
 Page 1
     Navigation Bar linking to all 4 pages
